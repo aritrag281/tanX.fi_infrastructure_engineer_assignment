@@ -1,0 +1,14 @@
+# Use a slim version of the Python 3.10 image as the base image
+FROM python:3.10-slim
+
+# Set the working directory in the container to /app
+WORKDIR /app
+
+# Copy the contents of the current directory on the host to /app in the container
+COPY . /app
+
+# Install the Python dependencies listed in requirements.txt without caching
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Set the default command to run unit tests in the /app/test directory
+CMD ["python", "-m", "unittest", "discover", "-s", "test"]

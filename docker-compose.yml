@@ -1,0 +1,16 @@
+version: '3.8'  # Specify the Docker Compose version
+
+services:
+  app:
+    build:
+      context: .  # Build context (directory) for the Dockerfile
+      dockerfile: Dockerfile  # Dockerfile to use for building the image
+    ports:
+      - "5000:80"  # Map port 80 in the container to port 5000 on the host
+    container_name: my_app  # Name of the container
+
+  test:
+    build:
+      context: .  # Build context (directory) for the Dockerfile.test
+      dockerfile: Dockerfile.test  # Dockerfile to use for building the test image
+    container_name: my_app_test  # Name of the test container
