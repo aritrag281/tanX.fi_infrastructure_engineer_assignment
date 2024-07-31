@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Revenue Analyzer** project is a Python-based application designed to analyze and report revenue data from orders. The project includes Docker configurations for both the application and its tests, along with unit tests to ensure the correctness of the functionalities.
+The **Revenue Analyzer** project is a Python-based application designed to analyze and report revenue data from orders.The project is using Reddis for caching and Postgresql for database and the application is deployed in Docker Swarm. The project includes Docker configurations for both the application and its tests, along with unit tests to ensure the correctness of the functionalities.
 
 ## Project Structure
 
