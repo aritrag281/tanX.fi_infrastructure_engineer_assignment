@@ -2,7 +2,7 @@
 
 ## Overview
 
-Video Link of the Explaination of the Project - https://drive.google.com/drive/u/0/my-drive?lfhs=2
+Video Link of the Explaination of the Project - [https://drive.google.com/drive/u/0/my-drive?lfhs=2](https://drive.google.com/file/d/1vPCMpOMJ2_Q_pdrbtKUJGQzMdcrpj2uf/view?usp=sharing)
 
 The **Revenue Analyzer** project is a Python-based application designed to analyze and report revenue data from orders.The project is using Reddis for caching and Postgresql for database and the application is deployed in Docker Swarm. The project includes Docker configurations for both the application and its tests, along with unit tests to ensure the correctness of the functionalities.
 
